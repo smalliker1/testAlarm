@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textSize="17dp"
+    tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="I have to wake up at..." />
+
+        <!--<TimePicker-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--</TimePicker>-->
+        <Button
+            android:id="@+id/setTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Time" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setTime"
+            android:layout_centerHorizontal="true"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calculate"
+            android:layout_centerHorizontal="true"
+            android:text="or" />
+
+        <TextView
+            android:id="@+id/find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:layout_centerHorizontal="true"
+            android:text="Find out when to get up if you go to bed now" />
+
+        <Button
+            android:id="@+id/sleepNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/find"
+            android:layout_centerHorizontal="true"
+            android:text="ZZZ" />
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sleepNow"
+            android:layout_centerHorizontal="true"
+            android:text="Buduj" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/setTime"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="140dp"
+            android:text="cancel" />
+
+        <TextView
+            android:id="@+id/infoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="27dp"
+            android:text="ALARM OFF"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+</RelativeLayout>
